@@ -31,7 +31,7 @@ You can also directly call `AddVariable(object obj)`. Each public property (incl
 
 ### Word document template
 
-![Word template sample](/OpenXmlBinder/assets/WordSample.png)
+![Word template sample](OpenXmlBinder/Assets/WordSample.png)
 
 ### Code 
 
