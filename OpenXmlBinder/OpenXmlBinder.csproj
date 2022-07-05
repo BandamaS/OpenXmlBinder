@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <Authors>BandamaS</Authors>
     <Description>Simple template binder for Word OpenXml</Description>
     <PackageProjectUrl>https://github.com/BandamaS/OpenXmlBinder</PackageProjectUrl>
@@ -12,6 +12,8 @@
     <RepositoryUrl>https://github.com/BandamaS/OpenXmlBinder</RepositoryUrl>
     <PackageTags>OpenXml;Word;Templating;Template;Tool</PackageTags>
     <SignAssembly>False</SignAssembly>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
