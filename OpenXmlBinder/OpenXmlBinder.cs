@@ -1,5 +1,6 @@
 ﻿using DocumentFormat.OpenXml.Packaging;
 using OpenXmlBinder.Exceptions;
+using OpenXmlPowerTools;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
@@ -26,7 +27,7 @@ namespace OpenXmlBinder
             MemStream.Write(byteArray);
 
 
-            WordDocument =  WordprocessingDocument.Open(MemStream, true);
+            WordDocument = WordprocessingDocument.Open(MemStream, true);
 
             if (WordDocument.MainDocumentPart == null)
             {
@@ -45,21 +46,28 @@ namespace OpenXmlBinder
         /// Apply the variables passed on the template and returns a memory stream containing the new word file
         /// </summary>
         /// <returns></returns>
-        public Stream Generate()
+        public byte[] Generate()
         {
-            foreach(var entry in Variables)
-            {
-                TemplateContent = Regex.Replace(TemplateContent, entry.Key, entry.Value ?? "");
 
+            IEnumerable<System.Xml.Linq.XElement> XElement = WordDocument.MainDocumentPart!.GetXDocument().Root!.Descendants(W.p);
+
+            foreach (var entry in Variables)
+            {
+                var regex = new Regex("{{" + entry.Key + "}}");
+
+                OpenXmlRegex.Replace(XElement, regex, entry.Value ?? "", null);
             }
 
-            using (StreamWriter sw = new StreamWriter(WordDocument.MainDocumentPart!.GetStream(FileMode.Create)))
-            {
+            WordDocument.MainDocumentPart!.PutXDocument();
 
-                sw.Write(TemplateContent);
-            }
+            WordDocument.MainDocumentPart!.Document.Save();
 
-            return MemStream;
+            WordDocument.Dispose();
+
+
+            MemStream.Position=0;
+
+            return MemStream.ToArray();
         }
 
         

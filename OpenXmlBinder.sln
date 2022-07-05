@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXmlBinder", "OpenXmlBin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXmlBinder.UnitTests", "OpenXmlBinder.UnitTests\OpenXmlBinder.UnitTests.csproj", "{DC8CB919-A453-4283-AC7C-9654CD13AEE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXmlBinder.Sample", "OpenXmlBinder.Sample\OpenXmlBinder.Sample.csproj", "{BF2D0A47-A3ED-4DC4-B1E1-3D76717A7D43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DC8CB919-A453-4283-AC7C-9654CD13AEE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC8CB919-A453-4283-AC7C-9654CD13AEE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC8CB919-A453-4283-AC7C-9654CD13AEE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2D0A47-A3ED-4DC4-B1E1-3D76717A7D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2D0A47-A3ED-4DC4-B1E1-3D76717A7D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2D0A47-A3ED-4DC4-B1E1-3D76717A7D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2D0A47-A3ED-4DC4-B1E1-3D76717A7D43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
