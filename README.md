@@ -6,7 +6,7 @@ OpenXmlBinder targets .net6 and uses [Open-XML-SDK](https://github.com/OfficeDev
 
 ## Installing OpenXmlBinder from nuget
 
-OpenXmlBinder can be installed from the nuget packge manager or from the console :
+OpenXmlBinder is available through [Nuget](https://www.nuget.org/packages/OpenXmlBinder/). It can be installed from the nuget packge manager or from the nuget console.
 
 ```
 PM> Install-Package OpenXmlBinder
