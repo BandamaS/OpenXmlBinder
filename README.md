@@ -4,7 +4,7 @@ OpenXmlBinder is a simple binder for Word OpenXml file. It allows easy filling o
 
 OpenXmlBinder targets .net6 and uses [Open-XML-SDK](https://github.com/OfficeDev/Open-XML-SDK) and [Open-XML-PowerTools](https://github.com/OfficeDev/Open-Xml-PowerTools) 
 
-## Install OpenXmlBinder from nuget
+## Installing OpenXmlBinder from nuget
 
 OpenXmlBinder can be installed from the nuget packge manager or from the console :
 
@@ -31,7 +31,7 @@ You can also directly call `AddVariable(object obj)`. Each public property (incl
 
 ### Word document template
 
-![Word template sample](/assets/WordSample.png)
+![Word template sample](/OpenXmlBinder/assets/WordSample.png)
 
 ### Code 
 
@@ -46,7 +46,7 @@ WeatherForecast forecast = new WeatherForecast
     Location=new Location("Paris","France")
 }
 
-//
+// Binding full object
 binder.AddVariable(forecast);
 
 // Adding named variable
