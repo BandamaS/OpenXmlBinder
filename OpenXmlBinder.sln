@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXmlBinder", "OpenXmlBinder\OpenXmlBinder.csproj", "{CF95649D-AED3-4E6B-BC7E-BBEB8ED13B8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXmlBinder.UnitTests", "OpenXmlBinder.UnitTests\OpenXmlBinder.UnitTests.csproj", "{DC8CB919-A453-4283-AC7C-9654CD13AEE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF95649D-AED3-4E6B-BC7E-BBEB8ED13B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF95649D-AED3-4E6B-BC7E-BBEB8ED13B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF95649D-AED3-4E6B-BC7E-BBEB8ED13B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF95649D-AED3-4E6B-BC7E-BBEB8ED13B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8CB919-A453-4283-AC7C-9654CD13AEE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8CB919-A453-4283-AC7C-9654CD13AEE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8CB919-A453-4283-AC7C-9654CD13AEE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8CB919-A453-4283-AC7C-9654CD13AEE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76EFE86D-79A1-480B-9EE1-A178C0352F77}
+	EndGlobalSection
+EndGlobal
