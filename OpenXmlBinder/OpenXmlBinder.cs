@@ -6,12 +6,8 @@ using System.Text.RegularExpressions;
 
 namespace OpenXmlBinder
 {
-    public class OpenXmlBinder : IDisposable
+    public class OXBinder : IDisposable
     {
-        /// <summary>
-        /// String content of the word file
-        /// </summary>
-        private string TemplateContent { get; set; }
 
         private MemoryStream MemStream { get; set; }
 
@@ -19,7 +15,7 @@ namespace OpenXmlBinder
 
         private Dictionary<string, string?> Variables { get; set; } = new Dictionary<string, string?>();
 
-        public OpenXmlBinder(string filename)
+        public OXBinder(string filename)
         {
             byte[] byteArray = File.ReadAllBytes(filename);
 
@@ -38,7 +34,6 @@ namespace OpenXmlBinder
                 using StreamReader contentStream = new StreamReader(WordDocument.MainDocumentPart.GetStream());
 
 
-                TemplateContent = contentStream.ReadToEnd();
             }
         }
 

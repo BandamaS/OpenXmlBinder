@@ -33,7 +33,7 @@ namespace OpenXmlBinder.Sample.Controllers
         [HttpGet(Name = "GetReport")]
         public IActionResult GetReport()
         {
-            OpenXmlBinder binder = new OpenXmlBinder("Template/WeatherForecastTemplate.docx");
+            OXBinder binder = new OXBinder("Template/WeatherForecastTemplate.docx");
 
             binder.AddVariable(new WeatherForecast
             {
