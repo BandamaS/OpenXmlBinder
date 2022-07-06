@@ -36,7 +36,7 @@ You can also directly call `AddVariable(object obj)`. Each public property (incl
 ### Code 
 
 ```
-OpenXmlBinder binder = new OpenXmlBinder("Template/WeatherForecastTemplate.docx");
+OXBinder binder = new OXBinder("Template/WeatherForecastTemplate.docx");
 
 WeatherForecast forecast = new WeatherForecast
 {
